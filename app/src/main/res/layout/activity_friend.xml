@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doanchat"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:background="@android:color/holo_purple"
+        android:padding="8dp"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/etSearchFriend"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginTop="8dp"
+        android:hint="Nhập tên bạn bè"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnSearchFriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tìm kiếm bạn bè"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_purple"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvNoFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách bạn bè"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvNoFriendsMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Không có bạn bè"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFriends"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+</LinearLayout>
